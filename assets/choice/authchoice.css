@@ -1,0 +1,17 @@
+.other-way a {
+    margin: 0 13px;
+    width: 40px;
+    height: 40px;
+    text-indent: -100px;
+    display: inline-block;
+    vertical-align: top;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    background: url(authchoice.png)no-repeat 0 0;
+    -webkit-background-size: 250px 40px;
+    background-size: 164px 40px;
+}
+.other-way .qq {background-position: 0 0;}
+.other-way .weixin {background-position: -41px 0;}
+.other-way .weibo {background-position: -82px 0;}
+.other-way .github {background-position: -123px 0;}
