@@ -1,4 +1,25 @@
-.other-way a {
+.auth-clients {
+    display: block;
+    margin: 0 0 1em;
+    list-style: none;
+    overflow: auto;
+}
+
+.auth-clients li {
+    float: left;
+    display: block;
+    margin: 0 1em 0 0;
+    text-align: center;
+}
+
+.auth-title {
+    display: block;
+    margin-top: 0.4em;
+    text-align: center;
+    width: 58px;
+}
+
+.auth-icon {
     margin: 0 13px;
     width: 40px;
     height: 40px;
@@ -11,7 +32,8 @@
     -webkit-background-size: 250px 40px;
     background-size: 164px 40px;
 }
-.other-way .qq {background-position: 0 0;}
-.other-way .weixin {background-position: -41px 0;}
-.other-way .weibo {background-position: -82px 0;}
-.other-way .github {background-position: -123px 0;}
+
+.auth-icon.qq {background-position: 0 0;}
+.auth-icon.weixin {background-position: -41px 0;}
+.auth-icon.weibo {background-position: -82px 0;}
+.auth-icon.github {background-position: -123px 0;}

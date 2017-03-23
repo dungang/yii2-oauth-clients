@@ -51,7 +51,7 @@ class QQ extends OAuth2
 
     protected function defaultName()
     {
-        return 'QQ';
+        return 'qq';
     }
 
     protected function defaultTitle()

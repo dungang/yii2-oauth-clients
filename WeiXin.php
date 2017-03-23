@@ -129,7 +129,7 @@ class WeiXin extends OAuth2
 
     protected function defaultName()
     {
-        return 'Weixin';
+        return 'weixin';
     }
 
     protected function defaultTitle()

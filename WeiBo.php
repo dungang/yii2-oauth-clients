@@ -45,7 +45,7 @@ class WeiBo extends OAuth2
 
     protected function defaultName()
     {
-        return 'Weibo';
+        return 'weibo';
     }
 
     protected function defaultTitle()
