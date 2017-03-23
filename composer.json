@@ -1,6 +1,6 @@
 {
     "name": "dungang/yii2-oauth-clients",
-    "description": "yii2-oauth",
+    "description": "yii2-oauth-clients",
     "license": "MIT",
     "minimum-stability": "dev",
     "authors": [
