@@ -1,0 +1,23 @@
+{
+    "name": "dungang/yii2-oauth-clients",
+    "description": "yii2-oauth",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "dun gang",
+            "email": "dungang@126.com",
+            "homepage": "https://github.com/dungang",
+            "role": "Creator"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.5",
+        "yiisoft/yii2-authclient": "~2.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "dungang\\oauth\\": ""
+        }
+    }
+}
