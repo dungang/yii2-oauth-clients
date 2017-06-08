@@ -112,6 +112,7 @@ class WeiXin extends OAuth2
 
     /**
      * get UserInfo
+     *
      * @return array
      */
     public function getUserInfo()

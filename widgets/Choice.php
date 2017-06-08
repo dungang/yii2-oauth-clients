@@ -9,6 +9,7 @@ namespace dungang\oauth\widgets;
 
 
 use dungang\oauth\assets\ChoiceAsset;
+use yii\authclient\widgets\AuthChoiceItem;
 use yii\base\InvalidConfigException;
 use yii\base\Widget;
 use Yii;
@@ -137,7 +138,6 @@ class Choice extends Widget
     public function clientLink($client, $text = null, array $htmlOptions = [])
     {
         $viewOptions = $client->getViewOptions();
-
         if (empty($viewOptions['widget'])) {
             if ($text === null) {
                 $text = Html::tag('span', '', ['class' => 'auth-icon ' . $client->getName()]);
@@ -208,6 +208,9 @@ class Choice extends Widget
      */
     public function init()
     {
+        if(!isset($this->options['id'])) {
+            $this->options['id'] = $this->getId();
+        }
         $view = Yii::$app->getView();
         ChoiceAsset::register($view);
         if ($this->popupMode) {
@@ -216,9 +219,8 @@ class Choice extends Widget
             } else {
                 $options = Json::htmlEncode($this->clientOptions);
             }
-            $view->registerJs("jQuery('#" . $this->getId() . "').authchoice({$options});");
+            $view->registerJs("jQuery('#" . $this->options['id'] . "').authchoice({$options});");
         }
-        $this->options['id'] = $this->getId();
         echo Html::beginTag('div', $this->options);
     }
 

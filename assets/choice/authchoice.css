@@ -1,8 +1,9 @@
 .auth-clients {
-    display: block;
+    display: inline-block;
     margin: 0 0 1em;
     list-style: none;
     overflow: auto;
+    padding:0;
 }
 
 .auth-clients li {
