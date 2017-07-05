@@ -49,8 +49,10 @@ class ChoiceWidget extends Widget
 
     public function run()
     {
-        ChoiceAsset::register($this->view);
-        $clients = $this->createClient($this->clients);
-        return Html::tag('div',$clients,$this->options);
+        if($this->clients) {
+            ChoiceAsset::register($this->view);
+            $clients = $this->createClient($this->clients);
+            return Html::tag('div',$clients,$this->options);
+        }
     }
 }
